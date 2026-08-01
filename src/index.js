@@ -1,8 +1,8 @@
-function displayPoem(event) {
-  
-
-  new Typewriter("#joke", {
-    strings: ["Generating a poem for you...please wait", `${joke}`],
+function displayPoem(response) {
+  console.log("Poem generated");
+  let poem = response.data.answer;
+  new Typewriter("#poem", {
+    strings: ["Generating a poem for you...please wait", `${poem}`],
     autoStart: true,
     cursor: "",
     delay: 1,
@@ -13,7 +13,7 @@ function displayPoem(event) {
 
   
 }
-function generatePoem() {
+function generatePoem(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#user-instructions");
