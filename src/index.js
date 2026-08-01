@@ -12,7 +12,7 @@ function showJoke() {
   let apiKey = "2c00a5b0tfa996f784d39a0b16ee6fo7";
   let context = "be polite and give short answers";
   let prompt =
-    "Write a joke about science, mathematics or engineering fields without any other fluff. Do not repeat a joke.";
+    `Write a 4 line hindi poem in hindi about ${}. Do not repeat a poem.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   console.log("Processing");
   axios.get(apiUrl).then(showAnswer);

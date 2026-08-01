@@ -10,22 +10,30 @@
   </head>
 
   <body>
+    <div class="container">
+    <header>
     <h1>AI Hindi Poem Generator</h1>
+    </header>
+    <main>
     <form>
-        <input type="text" placeholder="Enter the topic of the Hindi poem" autofocus required autocomplete="off"/>
-        <input type="submit" />
+        <input type="text" placeholder="Enter the topic of the Hindi poem" autofocus required autocomplete="off" class="instructions"/>
+        <input type="submit" class="submit-button" />
     </form>
     <div>
         
     </div>
     
-    <div id="joke"><div>
-    <script src="src/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <div id="poem"><div>
+    </main>
     <footer>
+    
         This AI project was coded by <a href="https://tejaswinisamanta.github.io/" target="_blank">Tejaswini Samanta</a>
          and is open-sourced on <a href="https://github.com/tejaswinisamanta/hindi-poem-generator" target="_blank">Github</a>
          and is hosted on <a href="https://hindi-ai-poem-generator.netlify.app/" target="_blank">Netlify</a>.
     </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
   </body>
 </html>
